@@ -1,0 +1,229 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemraj | Portfolio</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4f/Iconic_image_of_user.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            color: black;
+            background-color: lightgrey;
+          
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: GREY;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+             
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color:  BLACK;
+        }
+
+        nav a {
+            color: BLACK;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color:  rgb(72, 7, 7);
+            
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 100px 10%;
+            flex-wrap: wrap;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            color: BLACK;
+        }
+
+        .hero-text h3 {
+            margin: 10px 0 20px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .hero-text p {
+            max-width: 550px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero-img {
+            width: 200px;
+            height: 300px;
+            border-radius: 20%;
+            border: 4px solid BLACK;
+            overflow: hidden;
+        }
+
+        .hero-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: BLACK;
+            margin-bottom: 40px;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .edu, .skills, .projects, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            width: 280px;
+            transition: 0.3s;
+            border: 1px solid black;
+        }
+
+        .card:hover {
+             transform: scale(1.10);
+           
+            border: 3px solid black;
+        }
+
+        .card h3 {
+            color: BLACK;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #333;
+        }
+
+        .contact a {
+           
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            background-color: white;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+            color: #444;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Hemraj.</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>Hemraj</h1>
+        <p> Computer Science Student at DTU | Exploring the World of Programming</p>
+    </div>
+
+    <div class="hero-img">
+        <img src="profile.jpeg" alt="Hemraj">
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>97.8 percentile in JEE Main, AIR 16000 in JEE Advanced. Learning C, HTML, CSS & Python. Interested in development and innovation.</p>
+</section>
+
+<section id="education" class="edu">
+    <h2>Education</h2>
+    <div class="card"><h3>DTU</h3><p>B.Tech CSE (2025-2029)</p></div>
+    <div class="card"><h3>Navyug Convent School</h3><p>Class 12 - 86%</p></div>
+    <div class="card"><h3>RPS Mahendragarh</h3><p>Class 10 - 92%</p></div>
+</section>
+
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="card"><h3>C</h3><p>Strong base programming knowledge.</p></div>
+    <div class="card"><h3>HTML</h3><p>Structured semantic layouts.</p></div>
+    <div class="card"><h3>CSS</h3><p>Clean + aesthetic design styling.</p></div>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        <h3>Amazon Clone</h3>
+        <p>Functional UI layout designed using pure HTML & CSS.</p>
+    </div>
+     <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio made using HTML & CSS, showcasing my education, skills, and projects.</p>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <div style="text-align:center;">
+        <p>Email: <a href="mailto:hemrajydv20@gmail.com">hemrajydv20@gmail.com</a></p>
+        <p>Phone: <a href="tel:7015699951">7015699951</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/hemraj-yadav-a3b1b2377">Profile Link</a></p>
+    </div>
+</section>
+<hr color="black">
+<footer>© 2025 Hemraj</footer>
+
+</body>
+</html>
